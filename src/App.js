@@ -35,14 +35,13 @@ export default function App() {
   const [tableData, setTableData] = useState([]);
 
   const sortTableData = (loadedData) => {
-    loadedData.sort(function (a, b) {
-      return ('' + a.time).localeCompare(b.time);
-    })
+    return loadedData.sort((a, b) => ('' + a.time).localeCompare(b.time));
   };
 
   useEffect(() => {
-    const loadedData = sortTableData(window.loadDataFromFile('tableData.json'));
-    setTableData(loadedData);
+    const loadedData = window.loadDataFromFile('tableData.json');
+    const sortedData = sortTableData(loadedData);
+    setTableData(sortedData);
   }, []);
 
 
