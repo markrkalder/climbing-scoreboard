@@ -6,7 +6,6 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { useRef } from 'react';
 
 const columns = [
   { id: 'index', label: 'Koht', minWidth: 170 },
@@ -23,8 +22,8 @@ const columns = [
 
 export default function StickyHeadTable({ tableData }) {
   return (
-    <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-      <TableContainer sx={{ maxHeight: 440 }}>
+      <Paper sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
+        <TableContainer sx={{ flex: 1 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
