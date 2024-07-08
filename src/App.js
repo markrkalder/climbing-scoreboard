@@ -13,9 +13,9 @@ export default function App() {
               trackLabel={'Rada 1'}
               shortTrackFilename={'rada1short.json'}
               longTrackFilename={'rada1long.json'}
-              startKey={'1'}
-              shortStopKey={'3'}
-              longStopKey={'5'}
+              startKey={'2'}
+              shortStopKey={'5'}
+              longStopKey={'6'}
           ></TrackComponent>
         </Grid>
         <Grid xs={6}>
@@ -23,9 +23,9 @@ export default function App() {
               trackLabel={'Rada 2'}
               shortTrackFilename={'rada2short.json'}
               longTrackFilename={'rada2long.json'}
-              startKey={'2'}
-              shortStopKey={'4'}
-              longStopKey={'6'}
+              startKey={'1'}
+              shortStopKey={'3'}
+              longStopKey={'4'}
           ></TrackComponent>
         </Grid>
       </Grid>
